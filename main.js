@@ -151,7 +151,7 @@ const checkForCompletedRows = () => {
   for (let y = 0; y < gameBoardArrayHeight; y++) {
     let completed = true;
 
-    for (let x = 0; x < gameBoardArrayWidth; x++) {
+    for (let x = 0; x < gameBoardArrayWidth + 1; x++) {
       let square = stoppedShapeArray[x][y];
 
       if (square === 0 || typeof square === 'undefined') {
