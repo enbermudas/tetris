@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="main.js"></script>
+  <title>Tetris</title>
+</head>
+<body>
+  <div id="guide" class="content">
+    <center>
+      <h1>¿Cómo jugar?</h1>
+      <p>
+        Es Tetris, ya sabes que hacer.
+      </p>
+
+      <p><b>W</b>: Rotar pieza</p>
+      <p><b>A</b>: Izquierda</p>
+      <p><b>D</b>: Derecha</p>
+      <p><b>S</b>: Bajar</p>
+
+      <p>
+        <i>¿Cuál es el botón de volver a empezar?</i>
+        <br>El F5
+      </p>
+
+      <p>
+        <i>Kike, x cosa no funciona.</i>
+        <br>Qcyo, hice en una sentada. Este es un grito de ayuda, no me juzgues.
+      </p>
+
+      <p><h1>El juego tiene música. No digas que no te lo advertí.</h1></p>
+    </center>
+  </div>
+
+  <form action="#" id="config-form">
+    <div class="field">
+      <label class="label">Elegir Dificultad</label>
+      <div class="control">
+        <div class="select">
+          <select id="difficulty">
+            <option value="1">Fácil</option>
+            <option value="3">Normal</option>
+            <option value="6">Difícil</option>
+            <option value="9">Rosalía</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <button class="button" id="start-game-button">Iniciar</button>
+  </form>
+
+  <h1 class="hidden" id="score">Puntuación: <span id="score-text">0</span></h1>
+  <canvas id="game-canvas" class="hidden"></canvas>
+</body>
+</html>
